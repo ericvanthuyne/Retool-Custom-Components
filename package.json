@@ -1,9 +1,11 @@
 {
-  "name": "my-react-app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@ericvanthuyne/retool-sql-editor",
+  "version": "1.0.0",
+  "private": false,
   "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
     "@tryretool/custom-component-support": "latest",
+    "monaco-editor": "^0.55.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -32,7 +34,14 @@
     "@typescript-eslint/parser": "^7.3.1",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.1",
-    "prettier": "^3.0.3",
-    "postcss-modules": "^6.0.0"
+    "postcss-modules": "^6.0.0",
+    "prettier": "^3.0.3"
+  },
+  "retoolCustomComponentLibraryConfig": {
+    "name": "SQL Editor",
+    "label": "SQL Editor",
+    "description": "An SQL editor with syntax highlighting and schema-based autocomplete",
+    "entryPoint": "src/index.tsx",
+    "outputPath": "dist"
   }
 }
