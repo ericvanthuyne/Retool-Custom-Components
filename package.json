@@ -1,47 +1,25 @@
 {
-  "name": "@ericvanthuyne/retool-sql-editor",
+  "name": "@ericvanthuyne/retool-custom-components",
   "version": "1.0.0",
   "private": false,
-  "dependencies": {
-    "@monaco-editor/react": "^4.7.0",
-    "@tryretool/custom-component-support": "latest",
-    "monaco-editor": "^0.55.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+  "workspaces": [
+    "components/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present"
   },
   "engines": {
     "node": ">=20.0.0"
   },
-  "scripts": {
-    "dev": "npx retool-ccl dev",
-    "deploy": "npx retool-ccl deploy"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericvanthuyne/Retool-Custom-Components.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@types/react": "^18.2.55",
-    "@typescript-eslint/eslint-plugin": "^7.3.1",
-    "@typescript-eslint/parser": "^7.3.1",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react": "^7.34.1",
-    "postcss-modules": "^6.0.0",
-    "prettier": "^3.0.3"
-  },
-  "retoolCustomComponentLibraryConfig": {
-    "name": "SQL Editor",
-    "label": "SQL Editor",
-    "description": "An SQL editor with syntax highlighting and schema-based autocomplete",
-    "entryPoint": "src/index.tsx",
-    "outputPath": "dist"
-  }
+  "keywords": [
+    "retool",
+    "custom-components",
+    "retool-components"
+  ],
+  "license": "MIT"
 }

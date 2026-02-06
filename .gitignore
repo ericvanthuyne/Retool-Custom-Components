@@ -1,5 +1,6 @@
 node_modules
 yarn-error.log
+package-lock.json
 public/components/*/*.js.map
 public/components/*/*.js
 public/components/*/*.css
@@ -11,3 +12,10 @@ analyze.js
 retool-custom-component-manifest.json
 dist/*
 !dist/.placeholder
+
+# Component-specific ignores
+components/*/node_modules
+components/*/dist/*
+!components/*/dist/.placeholder
+components/*/retool-custom-component-manifest.json
+components/*/package-lock.json
